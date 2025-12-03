@@ -12,7 +12,7 @@
         <link rel="prev" href="../../Tasks/03_reconcile_transaction_history/">
       
       
-        <link rel="next" href="../../Reference/treasurypro_release_notes/">
+        <link rel="next" href="../02_consolidated_liquidity_view/">
       
       
         
@@ -62,6 +62,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#real-time-cash-positioning" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -641,6 +646,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Real-Time Cash Positioning
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -659,6 +684,187 @@
 
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#real-time-data-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Real-Time Data Matters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Components
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_consolidated_liquidity_view/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Consolidated Liquidity View
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_idempotent_payment_processing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Idempotent Payment Processing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_liquidity_threshold_alerts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Liquidity Threshold Alerts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_role_based_access_controls/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Role-Based Access Controls
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_batch_processing_and_cutoff_times/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Batch Processing and Cutoff Times
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -772,57 +978,41 @@
 
 
 
-  <h1>Real-Time Cash Positioning</h1>
-
-<pre><code class="language-markdown"># Real-Time Cash Positioning
-## Understanding Real-Time Cash Positioning
-The Real-Time Cash Positioning dashboard is a critical feature within your ERP software, giving you an immediate, accurate view of your company's available funds across all QBank accounts.
-This feature is unique because it combines two different types of financial data, which is essential for making smart intraday decisions:
-
-### 1. Instant Funds (Real-Time Data)
-When you look at your Available Balance on the Cash Positioning dashboard, that number is fetched directly from QBank's core system the moment you refresh the page.
-Endpoint Used: This relies on the QBank Connect /balances endpoint.
-Best For: Making immediate decisions, such as confirming funds for a large wire transfer or ensuring a check won't cause an overdraft. This data is the most current and can be refreshed multiple times per hour.
-
-### 2. Reconciliation and Auditing (Batch-Latent Data)
-The detailed Transaction History visible below the balance is used for daily reconciliation, auditing, and reporting.
-Endpoint Used: This relies on the QBank Connect /transactions endpoint.
-Data Latency: Since transactional records (like checks cleared or ACH debits) are processed through the bank's end-of-day batch processing, the history you view is updated only once per day, typically after 1:00 am (the nightly cutoff).
-Best For: Month-end closing, regulatory reporting, and confirming past activity.
-
-## The Core Concept: Data Cutoff
-The most important thing to remember is the daily data cutoff. Any transactions that occur today (for instance, an ACH payment initiated this morning) will not appear in your detailed Transaction History until tomorrow morning after the nightly data synchronization. The only way to see today's impact is through the Available Balance figure.
-
----
-
-# alternative content
-
-# 💰 Real-Time Cash Positioning: A Core TreasuryPro Concept
-
-Real-Time Cash Positioning is the capability to view your company’s global cash balances and transactions as they occur, providing an immediate, accurate snapshot of liquidity. This is fundamental to **TreasuryPro's** value proposition, allowing treasury professionals to make informed decisions about funding and investment quickly.
-
----
-
-## Why Real-Time Data Matters
-
-Traditional cash positioning relies on end-of-day bank files, which creates a significant time delay (a cash blind spot). Real-Time Cash Positioning eliminates this lag by integrating directly with QBank and other financial institutions via the **QBank Connect API**.
-
-| Old Method (End-of-Day) | TreasuryPro Real-Time Positioning |
-| :--- | :--- |
-| **Data Latency:** 12-24 hours | **Data Latency:** Seconds |
-| **Decision Impact:** Reactive | **Decision Impact:** Proactive |
-| **Risk:** Increased overdraft/idle cash risk | **Risk:** Optimized liquidity management |
-
-## Key Components
-
-The system relies on three core components working together:
-
-1.  **QBank Connect:** Our primary API integration layer that ingests transaction feeds directly from QBank as they are processed.
-2.  **Intraday Ledger:** A continuously updated ledger that aggregates and normalizes real-time data from all connected accounts.
-3.  **Liquidity Forecast Engine:** Uses the real-time data to generate precise, hourly liquidity forecasts, allowing for immediate action.
-
-By understanding the real-time cash position, users gain the ability to **maximize investment returns** and **minimize borrowing costs** with unparalleled speed.
-</code></pre>
+<h1 id="real-time-cash-positioning">Real-Time Cash Positioning</h1>
+<p>Real-Time Cash Positioning is the capability to view your company’s global cash balances and transactions as they occur, providing an immediate, accurate snapshot of liquidity. </p>
+<p>With <strong>TreasuryPro</strong>, you can make informed decisions about funding and investment.</p>
+<h2 id="real-time-data-matters">Real-Time Data Matters</h2>
+<p>Traditional cash positioning relies on end-of-day bank files, which creates a significant time delay (a cash blind spot). Real-Time Cash Positioning eliminates this lag by integrating directly with QBank via the <strong>QBank Connect API</strong>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Old Method (End-of-Day)</th>
+<th style="text-align: left;">TreasuryPro Real-Time Positioning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Data Latency:</strong> 12-24 hours</td>
+<td style="text-align: left;"><strong>Data Latency:</strong> Seconds</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Decision Impact:</strong> Reactive</td>
+<td style="text-align: left;"><strong>Decision Impact:</strong> Proactive</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Risk:</strong> Increased overdraft/idle cash risk</td>
+<td style="text-align: left;"><strong>Risk:</strong> Optimized liquidity management</td>
+</tr>
+</tbody>
+</table>
+<h2 id="core-components">Core Components</h2>
+<p>The TreasuryPro system relies on three core components working together:</p>
+<ol>
+<li><strong>QBank Connect:</strong> Our primary API integration layer that ingests transaction feeds directly from QBank as they are processed.</li>
+<li><strong>Intraday Ledger:</strong> A continuously updated ledger that aggregates and normalizes real-time data from all connected accounts.</li>
+<li><strong>Liquidity Forecast Engine:</strong> Uses the real-time data to generate precise, hourly liquidity forecasts, allowing for immediate action.</li>
+</ol>
+<p>By understanding the real-time cash position, users gain the ability to <strong>maximize investment returns</strong> and <strong>minimize borrowing costs</strong> with unparalleled speed.</p>
 
 
 
