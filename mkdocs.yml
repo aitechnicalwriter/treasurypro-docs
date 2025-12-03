@@ -29,7 +29,10 @@ nav:
     - Role-Based Access Controls: Concepts/05_role_based_access_controls.md
     - Batch Processing and Cutoff Times: Concepts/06_batch_processing_and_cutoff_times.md
   - Reference:
-    - Release Notes: Reference/treasurypro_release_notes.md
-  
+    - Glossary: Reference/01_glossary_of_terms.md
+    - Status Codes: Reference/02_qbank_connect_status_codes.md
+    - Security Policy: Reference/security_policy_overview.md
+    - Release Notes: Reference/release_notes.md
+    
 plugins:
   - search
