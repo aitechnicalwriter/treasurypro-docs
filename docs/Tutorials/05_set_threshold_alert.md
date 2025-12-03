@@ -1,4 +1,4 @@
-# 🔔 Setting Up a Threshold Alert
+# Setting Up a Threshold Alert
 
 Set up automated alerts to notify you when your account balance falls below a critical threshold, enabling rapid liquidity intervention.
 

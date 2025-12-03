@@ -1,4 +1,4 @@
-# 📈 Creating a Basic Liquidity Forecast
+# Creating a Basic Liquidity Forecast
 
 This tutorial demonstrates how to leverage real-time and historical data within TreasuryPro to generate a forward-looking cash flow projection.
 

@@ -1,8 +1,6 @@
-# 🧑‍💻 Setting Up Your TreasuryPro User Profile
+# Setting Up Your TreasuryPro User Profile
 
 This tutorial guides first-time users through the necessary steps to configure their security settings, set notification preferences, and complete their profile for optimal use of TreasuryPro.
-
----
 
 ## Step 1: Initialize Your Profile Security
 

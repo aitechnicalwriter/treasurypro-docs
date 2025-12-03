@@ -1,4 +1,4 @@
-# 🆘 Troubleshooting QBank Connect Errors
+# Troubleshooting QBank Connect Errors
 
 This guide helps you diagnose common API-related user errors, such as payment failures and data sync issues, without needing to contact support immediately.
 

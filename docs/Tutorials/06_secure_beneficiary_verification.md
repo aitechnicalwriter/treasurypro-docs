@@ -1,4 +1,4 @@
-# 🔒 Performing Secure Beneficiary Verification
+# Performing Secure Beneficiary Verification
 
 Before making a payment, all new beneficiaries must undergo secure verification to prevent fraud.
 

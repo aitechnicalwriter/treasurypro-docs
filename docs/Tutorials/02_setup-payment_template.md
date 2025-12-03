@@ -1,4 +1,4 @@
-# 💸 Setting Up a New Payment Template
+# Setting Up a New Payment Template
 
 This tutorial shows how to create a pre-filled payment template to expedite routine transactions and ensure compliance with formatting rules.
 

@@ -1,4 +1,4 @@
-# 📑 Managing and Exporting Audit Logs
+# Managing and Exporting Audit Logs
 
 Learn how to access, filter, and export a log of all system activity and user actions for internal auditing and compliance reporting.
 
