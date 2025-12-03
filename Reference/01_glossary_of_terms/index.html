@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../Tutorials/07_troubleshoot_connect_errors/">
+        <link rel="prev" href="../../Concepts/06_batch_processing_and_cutoff_times/">
       
       
-        <link rel="next" href="../03_reconcile_transaction_history/">
+        <link rel="next" href="../02_qbank_connect_status_codes/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>Check Your Intraday Available Balance - TreasuryPro Help Center</title>
+        <title>Glossary - TreasuryPro Help Center</title>
       
     
     
@@ -63,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#glossary-of-key-terms" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -95,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Check Your Intraday Available Balance
+              Glossary
             
           </span>
         </div>
@@ -471,20 +476,20 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -505,7 +510,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -520,17 +525,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Tasks/02_check_intraday_balance/" class="md-nav__link">
         
   
   
@@ -546,7 +544,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -559,7 +556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../03_reconcile_transaction_history/" class="md-nav__link">
+      <a href="../../Tasks/03_reconcile_transaction_history/" class="md-nav__link">
         
   
   
@@ -815,20 +812,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -849,7 +846,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -864,10 +861,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Reference/01_glossary_of_terms/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -883,6 +889,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -895,7 +902,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Reference/02_qbank_connect_status_codes/" class="md-nav__link">
+      <a href="../02_qbank_connect_status_codes/" class="md-nav__link">
         
   
   
@@ -923,7 +930,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Reference/security_policy_overview.md" class="md-nav__link">
+      <a href="../security_policy_overview.md" class="md-nav__link">
         
   
   
@@ -951,7 +958,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Reference/release_notes.md" class="md-nav__link">
+      <a href="../release_notes.md" class="md-nav__link">
         
   
   
@@ -996,65 +1003,54 @@
 
 
 
-  <h1>Check Your Intraday Available Balance</h1>
-
-<pre><code class="language-markdown"># How to Check Your Intraday Available Balance
-This guide shows you how to get the most accurate, real-time snapshot of the funds available for use today.
-
-## Step 1: Navigate to the Cash Positioning Dashboard
-From your main ERP menu, locate and click the &quot;Treasury&quot; or &quot;Cash Management&quot; tab, and then select &quot;Real-Time Cash Positioning.&quot;
-
-## Step 2: Select the Target Account
-In the Cash Positioning dashboard, you will see a list of all bank accounts linked to your ERP system through QBank Connect.
-1. Locate Account: Use the search bar or filters (e.g., by Account Name or Account Number) to find the specific account you wish to review.
-2. View Balance Panel: Click on the account name. A dedicated panel will load, displaying the following figures:
-    - Available Balance: This is the real-time amount you have available to spend today. This figure reflects all pending debits and credits that have cleared, as well as any holds.
-    - Ledger Balance: This is the technical balance that reflects transactions as of the last nightly cutoff (e.g., yesterday's closing balance).
-
-## Step 3: Refresh the Data
-To ensure the Available Balance is the most current number, you must manually trigger a fetch request from the bank.
-1. Locate Refresh Button: Find the Refresh button (often represented by a circular arrow icon ) located near the Available Balance figure.
-2. Click Refresh: Click the button. The system will send an immediate call to the QBank Connect /balances endpoint.
-3. Confirm Timestamp: Once the data is updated, a timestamp will confirm the last successful data retrieval (e.g., &quot;Last Updated: Today at 1:25 PM&quot;).
-
----
-
-# Alternative Content
-
-# 🔍 How to Check Your Intraday Available Balance
-
-This guide explains how to view your real-time available cash balance across all integrated bank accounts using the TreasuryPro dashboard.
-
-## Prerequisites
-
-* You must have **Viewer** or **Controller** permissions for the Cash Management module.
-* Your accounts must be connected to **QBank Connect** for real-time feed updates.
-
----
-
-## Step 1: Access the Dashboard
-
-1.  Log into your TreasuryPro application.
-2.  From the primary navigation menu on the left, select the **Cash Management** icon (often represented by a piggy bank or money icon).
-3.  The **Cash Overview Dashboard** will load, displaying summary widgets for all accounts.
-
-## Step 2: Locate the Available Balance Widget
-
-1.  Scroll down to the section labeled **Intraday Liquidity Position**.
-2.  The top metric in this section is **Total Available Balance**. This figure is updated every 60 seconds based on the latest transactions received via QBank Connect.
-
-## Step 3: View Account-Specific Details
-
-1.  To drill down into a specific account, click the **View Details** button located in the bottom-right corner of the **Intraday Liquidity Position** widget.
-2.  A table will expand, showing line-by-line data for each bank account. The most important columns are:
-    * **Booked Balance:** The balance as of the last End-of-Day report.
-    * **Pending Adjustments:** Total value of transactions confirmed but not yet settled.
-    * **Intraday Available Balance:** (Booked Balance + Pending Adjustments). This is your true real-time usable cash.
-
-## Troubleshooting
-
-If the **Intraday Available Balance** is not updating, please verify your **QBank Connect** status under the System Settings menu.
-</code></pre>
+<h1 id="glossary-of-key-terms">📖 Glossary of Key Terms</h1>
+<p>This glossary defines technical terms and concepts frequently used within the TreasuryPro application and documentation.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Term</th>
+<th style="text-align: left;">Definition</th>
+<th style="text-align: left;">Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>ACH</strong></td>
+<td style="text-align: left;"><strong>Automated Clearing House.</strong> An electronic network for processing transactions, usually low-value and non-urgent (e.g., payroll).</td>
+<td style="text-align: left;">Payment methods</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Available Balance</strong></td>
+<td style="text-align: left;">The amount of cash currently available for use. This includes all cleared transactions and funds the bank has made available.</td>
+<td style="text-align: left;">Real-Time Cash Positioning</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>BAI2</strong></td>
+<td style="text-align: left;"><strong>Bank Administration Institute, Format 2.</strong> The standard file format banks use to send corporate balance and transaction statements.</td>
+<td style="text-align: left;">Reconciliation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Cutoff Time</strong></td>
+<td style="text-align: left;">The deadline for submitting a payment (e.g., ACH batch) for same-day processing.</td>
+<td style="text-align: left;">Payment processing</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Finality</strong></td>
+<td style="text-align: left;">The legal point in time when a funds transfer is considered complete and irreversible (e.g., a wire transfer).</td>
+<td style="text-align: left;">Payment risk</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Idempotency</strong></td>
+<td style="text-align: left;">The property that ensures a payment request, even if submitted multiple times, will only be executed once.</td>
+<td style="text-align: left;">Fraud prevention, API stability</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ledger Balance</strong></td>
+<td style="text-align: left;">The balance of an account at the start or end of a business day, reflecting transactions that have been fully posted.</td>
+<td style="text-align: left;">Reconciliation</td>
+</tr>
+</tbody>
+</table>
 
 
 

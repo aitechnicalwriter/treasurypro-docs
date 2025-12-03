@@ -9,10 +9,6 @@
       
       
       
-        <link rel="prev" href="../../Tutorials/07_troubleshoot_connect_errors/">
-      
-      
-        <link rel="next" href="../03_reconcile_transaction_history/">
       
       
         
@@ -23,7 +19,7 @@
     
     
       
-        <title>Check Your Intraday Available Balance - TreasuryPro Help Center</title>
+        <title>TreasuryPro Release Notes - TreasuryPro Help Center</title>
       
     
     
@@ -63,6 +59,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#treasurypro-release-notes" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -95,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Check Your Intraday Available Balance
+              TreasuryPro Release Notes
             
           </span>
         </div>
@@ -471,20 +472,20 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -505,7 +506,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -520,17 +521,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Tasks/02_check_intraday_balance/" class="md-nav__link">
         
   
   
@@ -546,7 +540,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -559,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../03_reconcile_transaction_history/" class="md-nav__link">
+      <a href="../../Tasks/03_reconcile_transaction_history/" class="md-nav__link">
         
   
   
@@ -867,7 +860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Reference/01_glossary_of_terms/" class="md-nav__link">
+      <a href="../01_glossary_of_terms/" class="md-nav__link">
         
   
   
@@ -895,7 +888,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Reference/02_qbank_connect_status_codes/" class="md-nav__link">
+      <a href="../02_qbank_connect_status_codes/" class="md-nav__link">
         
   
   
@@ -923,7 +916,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Reference/security_policy_overview.md" class="md-nav__link">
+      <a href="../security_policy_overview.md" class="md-nav__link">
         
   
   
@@ -951,7 +944,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Reference/release_notes.md" class="md-nav__link">
+      <a href="../release_notes.md" class="md-nav__link">
         
   
   
@@ -996,65 +989,70 @@
 
 
 
-  <h1>Check Your Intraday Available Balance</h1>
-
-<pre><code class="language-markdown"># How to Check Your Intraday Available Balance
-This guide shows you how to get the most accurate, real-time snapshot of the funds available for use today.
-
-## Step 1: Navigate to the Cash Positioning Dashboard
-From your main ERP menu, locate and click the &quot;Treasury&quot; or &quot;Cash Management&quot; tab, and then select &quot;Real-Time Cash Positioning.&quot;
-
-## Step 2: Select the Target Account
-In the Cash Positioning dashboard, you will see a list of all bank accounts linked to your ERP system through QBank Connect.
-1. Locate Account: Use the search bar or filters (e.g., by Account Name or Account Number) to find the specific account you wish to review.
-2. View Balance Panel: Click on the account name. A dedicated panel will load, displaying the following figures:
-    - Available Balance: This is the real-time amount you have available to spend today. This figure reflects all pending debits and credits that have cleared, as well as any holds.
-    - Ledger Balance: This is the technical balance that reflects transactions as of the last nightly cutoff (e.g., yesterday's closing balance).
-
-## Step 3: Refresh the Data
-To ensure the Available Balance is the most current number, you must manually trigger a fetch request from the bank.
-1. Locate Refresh Button: Find the Refresh button (often represented by a circular arrow icon ) located near the Available Balance figure.
-2. Click Refresh: Click the button. The system will send an immediate call to the QBank Connect /balances endpoint.
-3. Confirm Timestamp: Once the data is updated, a timestamp will confirm the last successful data retrieval (e.g., &quot;Last Updated: Today at 1:25 PM&quot;).
-
----
-
-# Alternative Content
-
-# 🔍 How to Check Your Intraday Available Balance
-
-This guide explains how to view your real-time available cash balance across all integrated bank accounts using the TreasuryPro dashboard.
-
-## Prerequisites
-
-* You must have **Viewer** or **Controller** permissions for the Cash Management module.
-* Your accounts must be connected to **QBank Connect** for real-time feed updates.
-
----
-
-## Step 1: Access the Dashboard
-
-1.  Log into your TreasuryPro application.
-2.  From the primary navigation menu on the left, select the **Cash Management** icon (often represented by a piggy bank or money icon).
-3.  The **Cash Overview Dashboard** will load, displaying summary widgets for all accounts.
-
-## Step 2: Locate the Available Balance Widget
-
-1.  Scroll down to the section labeled **Intraday Liquidity Position**.
-2.  The top metric in this section is **Total Available Balance**. This figure is updated every 60 seconds based on the latest transactions received via QBank Connect.
-
-## Step 3: View Account-Specific Details
-
-1.  To drill down into a specific account, click the **View Details** button located in the bottom-right corner of the **Intraday Liquidity Position** widget.
-2.  A table will expand, showing line-by-line data for each bank account. The most important columns are:
-    * **Booked Balance:** The balance as of the last End-of-Day report.
-    * **Pending Adjustments:** Total value of transactions confirmed but not yet settled.
-    * **Intraday Available Balance:** (Booked Balance + Pending Adjustments). This is your true real-time usable cash.
-
-## Troubleshooting
-
-If the **Intraday Available Balance** is not updating, please verify your **QBank Connect** status under the System Settings menu.
-</code></pre>
+<h1 id="treasurypro-release-notes">TreasuryPro Release Notes</h1>
+<h2 id="november-20-2025-version-220">November 20, 2025: Version 2.2.0</h2>
+<p>This update introduces major enhancements to the Cash Management module, improving efficiency and data accuracy.</p>
+<hr />
+<h2 id="whats-new">What's New</h2>
+<h3 id="real-time-status-indicators"><strong>Real-Time Status Indicators</strong></h3>
+<p>We have added a new status indicator to the <strong>Payment Submission</strong> screen. This provides immediate feedback on whether your submitted payment batch has been accepted by QBank Connect and is now processing, eliminating the need to check status logs manually.</p>
+<ul>
+<li><strong>Location:</strong> Payment Submission Screen, under the Batch ID column.</li>
+<li><strong>Benefit:</strong> Saves time and provides confidence in payment initiation.</li>
+</ul>
+<h3 id="simplified-account-linking"><strong>Simplified Account Linking</strong></h3>
+<p>The process for linking new bank accounts via QBank Connect has been simplified to a three-step wizard, reducing the average setup time by 40%.</p>
+<ul>
+<li><strong>Location:</strong> System Settings &gt; Bank Account Configuration.</li>
+<li><strong>Benefit:</strong> Faster onboarding of new banking partners and subsidiaries.</li>
+</ul>
+<hr />
+<h2 id="fixes-and-improvements">Fixes and Improvements</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Issue Area</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Reporting</strong></td>
+<td style="text-align: left;">Fixed an issue where the Quarterly Liquidity Report sometimes failed to include accounts with zero activity.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Dashboard</strong></td>
+<td style="text-align: left;">Resolved a bug causing the <strong>Intraday Available Balance</strong> widget to temporarily show stale data if the network connection was briefly interrupted. Data now recovers instantly upon reconnection.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>API</strong></td>
+<td style="text-align: left;">Improved error messaging for failed payment submissions due to invalid character limits in beneficiary fields.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="november-6-2025-version-213">November 6, 2025: Version 2.1.3</h2>
+<p>We upgraded your cash management features, powered by our partner, QBank Connect. These updates provide faster fund access and simpler auditing.</p>
+<h3 id="1-new-payment-speed-instant-transfers-real-time-payments">1. ⚡ New Payment Speed: Instant Transfers (Real-Time Payments)</h3>
+<p>You now have access to Real-Time Payments (RTP), a new payment option for urgent and high-value transfers.</p>
+<h4 id="whats-new-for-you">What’s New for You?</h4>
+<ul>
+<li><strong>Instant Confirmation</strong>: When you submit a payment using the new Instant Transfer option, you receive immediate, guaranteed confirmation within seconds. This removes any uncertainty about whether the funds were successfully sent.</li>
+<li><strong>24/7/365 Availability</strong>: Instant Transfers can be initiated and settled at any time, including nights, weekends, and holidays.</li>
+<li><strong>Irreversible Guarantee</strong>: Once you receive the "Posted Success" status in your ERP, the payment is guaranteed to be settled in the recipient's account.</li>
+</ul>
+<h4 id="where-to-find-it">Where to Find It?</h4>
+<p>Look for the new "Instant Transfer (RTP)" option in the payment method dropdown when initiating a high-priority transfer or wire payment.
+    Tip: Use Instant Transfer when you need to confirm a large payment has landed immediately, such as closing a last-minute deal or covering an urgent liability.</p>
+<h3 id="2-automated-statement-image-retrieval">2. Automated Statement Image Retrieval</h3>
+<p>You no longer need to manually log into a separate QBank portal to download and file your monthly bank statements. TreasuryPro can now retrieve official statement PDFs automatically.</p>
+<h4 id="whats-new-for-you_1">What’s New for You?</h4>
+<ul>
+<li><strong>One-Click Auditing</strong>: The new Statement Archive feature in your ERP provides a direct link to the official, monthly PDF statement image from QBank.</li>
+<li><strong>Simpler Reconciliation</strong>: Easily access historical statements for audit trails without leaving your ERP environment.</li>
+<li><strong>Faster Access</strong>: Statements are available immediately after the bank finalizes the month-end process.</li>
+</ul>
+<h4 id="where-to-find-it_1">Where to Find It?</h4>
+<p>Navigate to the Reporting or Document Archive module. You will find a new section titled "Bank Statement Images" where you can select the month and account to retrieve the PDF.</p>
 
 
 
