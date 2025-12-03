@@ -2,20 +2,22 @@ site_name: TreasuryPro Help Center
 theme:
   name: material
   features:
-    - navigation.tabs
     - navigation.expand
     - search.suggest
     - content.tabs.link
     - toc.integrate
 
 # --- Navigation Structure ---
-nnav:
+nav:
   - Welcome: index.md
-  - User Guides:
-    - Real-Time Cash Positioning (Concept): kb/01_real_time_cash_positioning.md
-    - Check Your Available Balance (How-To): kb/02_check_intraday_balance.md
-    - Reconcile Transaction History (How-To): kb/03_reconcile_transaction_history.md  # <-- NEW LINE
-  - Release Notes (For Users): rn/treasurypro_release_notes.md
+  - Tutorials: []
+  - Tasks:
+    - Check Your Intraday Available Balance: Tasks/02_check_intraday_balance.md
+    - Reconcile Transaction History: Tasks/03_reconcile_transaction_history.md
+  - Concepts:
+    - Real-Time Cash Positioning: Concepts/01_real_time_cash_positioning.md
+  - Reference:
+    - Release Notes: Reference/treasurypro_release_notes.md
   
 plugins:
   - search

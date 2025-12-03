@@ -1,3 +1,4 @@
+```markdown
 # How to Check Your Intraday Available Balance
 This guide shows you how to get the most accurate, real-time snapshot of the funds available for use today.
 
@@ -54,3 +55,4 @@ This guide explains how to view your real-time available cash balance across all
 ## Troubleshooting
 
 If the **Intraday Available Balance** is not updating, please verify your **QBank Connect** status under the System Settings menu.
+```

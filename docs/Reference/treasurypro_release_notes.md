@@ -1,3 +1,4 @@
+```markdown
 # 🚀 TreasuryPro Release Notes: Version 2.2.0
 
 **Release Date:** October 15, 2025
@@ -56,3 +57,4 @@ Simpler Reconciliation: Easily access historical statements for audit trails wit
 Faster Access: Statements are available immediately after the bank finalizes the month-end process.
 Where to Find It?
 Navigate to the Reporting or Document Archive module in your ERP. You will find a new section titled "Bank Statement Images" where you can select the month and account to retrieve the PDF.
+```

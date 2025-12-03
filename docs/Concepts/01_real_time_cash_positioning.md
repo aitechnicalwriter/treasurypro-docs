@@ -1,3 +1,4 @@
+```markdown
 # Real-Time Cash Positioning
 ## Understanding Real-Time Cash Positioning
 The Real-Time Cash Positioning dashboard is a critical feature within your ERP software, giving you an immediate, accurate view of your company's available funds across all QBank accounts.
@@ -46,3 +47,4 @@ The system relies on three core components working together:
 3.  **Liquidity Forecast Engine:** Uses the real-time data to generate precise, hourly liquidity forecasts, allowing for immediate action.
 
 By understanding the real-time cash position, users gain the ability to **maximize investment returns** and **minimize borrowing costs** with unparalleled speed.
+```

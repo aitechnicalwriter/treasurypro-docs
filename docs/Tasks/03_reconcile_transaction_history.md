@@ -1,3 +1,4 @@
+```markdown
 How to Reconcile Transaction History (Batch-Latent Data)
 This guide explains how to use the detailed transaction history for daily auditing and reconciliation. Remember that this data is Batch-Latent, meaning it updates once per day.
 Step 1: Access the Transaction History Report
@@ -43,7 +44,8 @@ Batch-latent data refers to transaction records received in large, scheduled dat
 ## Step 2: Compare and Flag Discrepancies
 
 1.  The report will display two main columns: **Booked Balance** (from EOD files) and **Intraday Final Balance** (from the QBank Connect feed).
-2.  Any row where the balances differ by more than \$0.01 is automatically flagged in red.
+2.  Any row where the balances differ by more than $0.01 is automatically flagged in red.
 3.  Click the **Flag as Discrepancy** button next to the row to open a ticket in your internal tracking system for further investigation by the operations team.
 
 > **Note:** The majority of discrepancies are caused by transactions that were initiated intraday but settled on the following business day.
+```
