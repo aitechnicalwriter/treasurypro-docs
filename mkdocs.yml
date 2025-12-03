@@ -23,6 +23,11 @@ nav:
     - Reconcile Transaction History: Tasks/03_reconcile_transaction_history.md
   - Concepts:
     - Real-Time Cash Positioning: Concepts/01_real_time_cash_positioning.md
+    - Consolidated Liquidity View: Concepts/02_consolidated_liquidity_view.md
+    - Idempotent Payment Processing: Concepts/03_idempotent_payment_processing.md
+    - Liquidity Threshold Alerts: Concepts/04_liquidity_threshold_alerts.md
+    - Role-Based Access Controls: Concepts/05_role_based_access_controls.md
+    - Batch Processing and Cutoff Times: Concepts/06_batch_processing_and_cutoff_times.md
   - Reference:
     - Release Notes: Reference/treasurypro_release_notes.md
   
