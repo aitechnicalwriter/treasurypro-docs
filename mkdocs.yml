@@ -31,8 +31,8 @@ nav:
   - Reference:
     - Glossary: Reference/01_glossary_of_terms.md
     - Status Codes: Reference/02_qbank_connect_status_codes.md
-    - Security Policy: Reference/security_policy_overview.md
-    - Release Notes: Reference/release_notes.md
+    - Security Policy: Reference/03_security_policy_overview.md
+    - Release Notes: Reference/99_release_notes.md
     
 plugins:
   - search
