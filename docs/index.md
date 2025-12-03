@@ -2,23 +2,23 @@
 
 Welcome to the Help Center, your resource for managing daily cash operations and leveraging Treasury Pro's real-time financial tools.
 
-## Features
+Features
 Get to know Treasury Pro's core functions and how to use them.
 
 Concept Guides
 
 
-### Real-Time Cash Positioning
+Real-Time Cash Positioning
 [What is Real-Time Cash Positioning?](Concepts/01_real_time_cash_positioning.md)
 
-#### Tasks:
+Tasks:
 - [How to Check Your Intraday Available Balance](Tasks/02_check_intraday_balance.md)
 - [How to Reconcile Transaction History](Tasks/03_reconcile_transaction_history.md)
 
-## Release Notes
+Release Notes
 New features and fixes delivered in our latest application updates.
 
-### October 15, 2025
+October 15, 2025
 [Release 2.2.0](Reference/treasurypro_release_notes.md)
 
 Django has a lot of documentation. A high-level overview of how it’s organized will help you know where to look for certain things:
