@@ -7,10 +7,17 @@ theme:
     - content.tabs.link
     - toc.integrate
 
-# --- Navigation Structure ---
+# --- Navigation Structure (Diataxis-inspired) ---
 nav:
   - Welcome: index.md
-  - Tutorials: []
+  - Tutorials:
+    - User Profile Setup: Tutorials/01_user_profile_setup.md
+    - Setting Up a New Payment Template: Tutorials/02_setup_payment_template.md
+    - Managing and Exporting Audit Logs: Tutorials/03_manage_audit_logs.md
+    - Creating a Basic Liquidity Forecast: Tutorials/04_create_liquidity_forecast.md
+    - Setting Up a Threshold Alert: Tutorials/05_set_threshold_alert.md
+    - Performing Secure Beneficiary Verification: Tutorials/06_secure_beneficiary_verification.md
+    - Troubleshooting QBank Connect Errors: Tutorials/07_troubleshoot_connect_errors.md
   - Tasks:
     - Check Your Intraday Available Balance: Tasks/02_check_intraday_balance.md
     - Reconcile Transaction History: Tasks/03_reconcile_transaction_history.md
